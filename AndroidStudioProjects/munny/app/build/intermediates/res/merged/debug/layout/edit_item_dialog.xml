@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    android:layout_weight="1">
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_delete"
+        android:id="@+id/delete_item"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/edit_picture"
+        android:src="@drawable/icon_camera"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="25dp"
+        android:paddingBottom="25dp" />
+
+    <Spinner android:id="@+id/edit_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/edit_price"
+        android:layout_alignBottom="@+id/edit_price"
+        android:layout_below="@+id/edit_picture"
+        android:textSize="20dp"
+        android:minHeight="0dp"/>
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edit_type"
+        android:id="@+id/sign2"
+        android:layout_alignTop="@id/edit_price"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_toLeftOf="@+id/idk2"
+        android:layout_toStartOf="@+id/idk2"
+        android:text="-"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/idk2"
+        android:layout_alignBottom="@+id/edit_type"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_toLeftOf="@+id/edit_price"
+        android:layout_toStartOf="@+id/edit_price"
+        android:text="$"
+        android:textSize="25dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_price"
+        android:layout_below="@+id/edit_picture"
+        android:inputType="numberDecimal|numberSigned"
+        android:layout_alignParentRight="true"
+        android:hint="0.00"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_description"
+        android:layout_below="@+id/edit_price"
+        android:layout_centerHorizontal="true"
+        android:inputType="textMultiLine"
+        android:maxLines="4"
+        android:hint="Enter description"/>
+
+
+    <Button android:id="@+id/editDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_description"
+        android:layout_centerHorizontal="true"
+        android:text="00/00/0000"
+        android:textSize="20dp"
+        android:minHeight="0dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editDate"
+        android:padding="5dp">
+        <Button
+            android:text="Cancel"
+            android:id="@+id/cancel_edit_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="40dp"
+            android:background="#00FFFFFF"
+            android:radius="10dp"/>
+
+        <Button
+            android:background="@drawable/ic_done"
+            android:id="@+id/done_edit_item"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="36dp"
+            android:layout_height="36dp" />
+    </RelativeLayout>
+</RelativeLayout>

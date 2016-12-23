@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+    </group>
+
+    <item android:title="History">
+        <menu>
+            <item
+                android:id="@+id/nav_all"
+                android:title="&#160;&#160;&#160;&#160;Show All" />
+            <item
+                android:id="@+id/nav_1month"
+                android:title="&#160;&#160;&#160;&#160;Last 30 Days" />
+            <item
+                android:id="@+id/nav_3months"
+                android:title="&#160;&#160;&#160;&#160;Last 90 days" />
+            <item
+                android:id="@+id/nav_6months"
+                android:title="&#160;&#160;&#160;&#160;Last 180 days" />
+        </menu>
+    </item>
+
+    <item android:title="Categories">
+        <menu>
+            <item
+                android:id="@+id/nav_food"
+                android:title="&#160;&#160;&#160;&#160;Food" />
+            <item
+                android:id="@+id/nav_drink"
+                android:title="&#160;&#160;&#160;&#160;Drink" />
+            <item
+                android:id="@+id/nav_clothes"
+                android:title="&#160;&#160;&#160;&#160;Clothes" />
+            <item
+                android:id="@+id/nav_automotive"
+                android:title="&#160;&#160;&#160;&#160;Auto" />
+            <item
+                android:id="@+id/nav_other"
+                android:title="&#160;&#160;&#160;&#160;Other" />
+        </menu>
+    </item>
+
+</menu>
